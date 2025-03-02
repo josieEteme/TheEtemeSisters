@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color:black
+        }
+    </style>
+    <style>
+        body {
+        background-color: #356a6a; /* Dark grayish blue */
+        color: white;
+        }
+    </style>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #c9737f;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="TheEtemeSisters.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <div style="background-color: gray; padding: 30px; text-align: center; margin: 20px auto; width: 50%;">
+        <h1 style="font-size: 3em; margin: 0;">About Us</h1>
+    </div>
+
+    <div style="background-color:dimgrey; padding: 30px; text-align: center; margin: 50px auto; width: 600px; height: 850px; display: flex; align-items: center; justify-content: center; position: relative;">
+        <img src="JVpic.png" width="550" height="800" id="hoverImage" style="transition: filter 0.3s ease;">
+        <div id="hoverText" style="position: absolute; color: white; font-size: 1em; display: none;"> 
+            <p>
+                Sisters Vyann and Josianne Eteme were brought up in the classical and jazz music tradition. Born and raised in Baltimore, the Eteme sisters have always been surrounded by music. 
+            </p>
+            <p>
+                They began playing their respective instruments, (Vyann-piano and Josianne-violin) at the ages of four and received training from Russian technicians, members of major symphony orchestras, and attended Interlochen Academy for the Arts. 
+                Their mother, world-renowned soprano, Janice Chandler-Eteme, instilled within them a dedication to the arts that centered community, an unceasing commitment to service, and a desire to increase the accessibility of classical music.
+            </p>
+
+
+            The Eteme Sisters are regularly part of musical programs for weddings, funerals, church services, and music festivals. 
+            They continue to concertize and perform whilst pursuing bachelor's degrees in music from Yale University and Gettysburg College, respectively. 
+            They specialize in classical, romantic, modern, and gospel styles and have worked across the DMV, New England, and Southeast.
+        </div>
+    </div>
+
+    <script>
+        const image = document.getElementById('hoverImage');
+        const hoverText = document.getElementById('hoverText');
+
+        image.addEventListener('mouseover', () => {
+            image.style.filter = 'brightness(50%)';
+            hoverText.style.opacity = '1';
+            hoverText.style.display = 'block';
+        });
+
+        image.addEventListener('mouseout', () => {
+            image.style.filter = 'brightness(100%)';
+            hoverText.style.opacity = '0';
+            hoverText.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
